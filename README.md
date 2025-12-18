@@ -1,4 +1,4 @@
-# 🚀 ProgressHub — Sub-0.1s Learning & Consistency Ecosystem
+# 🚀 ProgressHub — Learning & Consistency Ecosystem
 
 <p align="center">
   <img src="https://img.shields.io/badge/Frontend-React%20%7C%20Vite-blue?style=for-the-badge&logo=react"/>
@@ -36,6 +36,58 @@ We didn't just build a UI; we built a high-speed data delivery engine.
 3.  **Global Leaderboard**: Live ranking of students based on their lecture completion and consistency.
 4.  **Profile & Settings**: Manage your learning identity and customize your dashboard experience.
 5.  **Admin Control**: Comprehensive tools for managing the curriculum size and monitoring student engagement.
+
+---
+
+## 📂 Project Architecture
+
+```text
+ProgressHub/
+ ├── frontend/           # React + Vite Client
+ │    ├── src/
+ │    │    ├── context/  # Centralized Fast-Data AuthContext
+ │    │    ├── services/ # High-speed API Client
+ │    │    └── pages/    # Optimized User & Admin modules
+ ├── backend/            # Express + Socket.io Server
+ │    ├── controllers/   # Unified Data Controllers
+ │    ├── routes/        # RESTful Endpoints
+ │    └── models/        # MongoDB Data Models
+ └── README.md
+```
+
+---
+
+## ⚙️ Quick Installation
+
+### 1. Clone & Core Setup
+```bash
+git clone https://github.com/gauravpatil-06/ProgressHub.git
+cd ProgressHub
+```
+
+### 2. Backend Config
+Create a `.env` in the `backend/` folder:
+```env
+MONGODB_URI=your_mongodb_atlas_uri
+PORT=5000
+JWT_SECRET=your_secret_key
+```
+
+### 3. Launching
+```bash
+# Start Backend
+cd backend && npm start
+
+# Start Frontend
+cd frontend && npm run dev
+```
+
+---
+
+## 🛡️ Reliability & Speed
+*   **MongoDB Atlas**: Distributed cloud database for 99.9% uptime.
+*   **Parallel Data Engine**: Settings and Progress are fetched in parallel to cut load times by 50%.
+*   **Background Sync**: Silent database persistence ensures the UI never hangs waiting for a network response.
 
 ---
 
